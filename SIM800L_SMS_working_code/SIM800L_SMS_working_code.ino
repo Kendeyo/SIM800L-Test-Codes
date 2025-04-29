@@ -29,7 +29,7 @@ void setup() {
 
   mySerial.println("AT+CMGF=1");
   updateSerial();
-  mySerial.println("AT+CMGS=\"+254793036309\"");  // enter your phone number here (prefix country code)
+  mySerial.println("AT+CMGS=\"+2547xx-xxxxxx\"");  // enter your phone number here (prefix country code)
   updateSerial();
   mySerial.print("Hello from sim800L");  // enter your message here
   updateSerial();
@@ -41,9 +41,9 @@ void loop() {
 
   mySerial.println("AT+CMGF=1");
   updateSerial();
-  mySerial.println("AT+CMGS=\"+254793036309\"");  // enter your phone number here (prefix country code)
+  mySerial.println("AT+CMGS=\"+2547xx-xxxxxx\"");  // enter your phone number here (prefix country code)
   updateSerial();
-  mySerial.print("Hello from Superb Tech");  // enter your message here
+  mySerial.print("Hello from GSM");  // enter your message here
   updateSerial();
   mySerial.write(26);
   Serial.println("done");
